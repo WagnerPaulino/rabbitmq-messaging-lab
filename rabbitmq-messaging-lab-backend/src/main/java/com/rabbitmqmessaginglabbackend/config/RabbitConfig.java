@@ -10,7 +10,7 @@ import org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.rabbitmqmessaginglabbackend.receiver.ReceiverCount;
+import com.rabbitmqmessaginglabbackend.receiver.ReceiverMessage;
 
 @Configuration
 public class RabbitConfig {
@@ -45,7 +45,7 @@ public class RabbitConfig {
 	}
 
 	@Bean
-	MessageListenerAdapter listenerAdapter(ReceiverCount receiver) {
+	MessageListenerAdapter listenerAdapter(ReceiverMessage receiver) {
 		return new MessageListenerAdapter(receiver, "receiveMessage");
 	}
 

@@ -1,3 +1,4 @@
 FROM rabbitmq:3.8.9-management
-
-EXPOSE 5672
+env RABBITMQ_DEFAULT_USER=admin
+env RABBITMQ_DEFAULT_PASS=admin
+EXPOSE 5672 15672
