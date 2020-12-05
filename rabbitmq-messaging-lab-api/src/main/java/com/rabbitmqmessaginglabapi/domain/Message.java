@@ -1,4 +1,4 @@
-package com.rabbitmqmessaginglabbackend.domain;
+package com.rabbitmqmessaginglabapi.domain;
 
 import java.io.Serializable;
 
